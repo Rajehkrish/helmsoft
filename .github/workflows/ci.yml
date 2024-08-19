@@ -43,5 +43,5 @@ jobs:
     - name: Deploy with Helm
       run: |
         helm upgrade --install my-release helm/ --values helm/values.yaml
-        curl -X POST -H 'Content-type: application/json' --data "{\"text\":\"Deployment complete.\"}" https://hooks.slack.com/services/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
+        curl -X POST -H 'Content-type: application/json' --data "{\"hi\":\"Deployment complete.\"}" https://hooks.slack.com/services/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
 
